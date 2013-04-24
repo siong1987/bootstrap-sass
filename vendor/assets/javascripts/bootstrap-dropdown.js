@@ -52,6 +52,7 @@
       clearMenus()
 
       if (!isActive) {
+        $parent.trigger('shown')
         $parent.toggleClass('open')
       }
 
