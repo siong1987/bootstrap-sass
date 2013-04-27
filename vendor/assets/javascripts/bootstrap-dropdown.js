@@ -52,8 +52,7 @@
       clearMenus()
 
       if (!isActive) {
-        $parent.trigger('shown')
-        $parent.toggleClass('open')
+        $parent.toggleClass('open').trigger('shown')
       }
 
       $this.focus()
